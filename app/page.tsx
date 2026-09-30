@@ -231,6 +231,12 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-charcoal/30 to-transparent" />
 
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
+          {/* Banner de Oferta Especial */}
+          <div className="absolute top-24 left-1/2 -translate-x-1/2 bg-forest text-white px-6 py-3 rounded-full shadow-lg flex items-center gap-2">
+            <Sparkles className="w-5 h-5" />
+            <span className="font-medium">¡Oferta Especial! 20% de descuento en tu primer pedido</span>
+            <Sparkles className="w-5 h-5" />
+          </div>
           <p className="text-coral font-medium tracking-widest uppercase text-sm mb-4 animate-fade-in">
             Diseño Floral de Alta Gama
           </p>
