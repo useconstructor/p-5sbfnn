@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "App",
-  description: "Built by Constructor",
+  title: "Flores del Valle | Diseño Floral de Lujo",
+  description: "Arreglos florales personalizados para bodas, eventos corporativos y momentos especiales. Diseño floral de alta gama en Medellín.",
 };
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body>{children}</body>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }

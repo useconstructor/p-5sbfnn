@@ -1,24 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
-  --color-background: oklch(1 0 0);
-  --color-foreground: oklch(0.145 0 0);
-  --color-card: oklch(1 0 0);
-  --color-card-foreground: oklch(0.145 0 0);
-  --color-primary: oklch(0.205 0 0);
-  --color-primary-foreground: oklch(0.985 0 0);
-  --color-secondary: oklch(0.97 0 0);
-  --color-secondary-foreground: oklch(0.205 0 0);
-  --color-muted: oklch(0.97 0 0);
-  --color-muted-foreground: oklch(0.556 0 0);
-  --color-accent: oklch(0.97 0 0);
-  --color-accent-foreground: oklch(0.205 0 0);
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Source Sans 3', sans-serif;
+
+  --color-cream: #FAFAF7;
+  --color-beige: #F5F1E8;
+  --color-forest: #2D5016;
+  --color-charcoal: #3A3A38;
+  --color-coral: #E8978A;
+  --color-forest-light: #3d6b1f;
+  --color-forest-dark: #1f3a0f;
+
+  --color-background: #FAFAF7;
+  --color-foreground: #3A3A38;
+  --color-card: #FFFFFF;
+  --color-card-foreground: #3A3A38;
+  --color-primary: #2D5016;
+  --color-primary-foreground: #FFFFFF;
+  --color-secondary: #F5F1E8;
+  --color-secondary-foreground: #3A3A38;
+  --color-muted: #F5F1E8;
+  --color-muted-foreground: #6B6B68;
+  --color-accent: #E8978A;
+  --color-accent-foreground: #3A3A38;
   --color-destructive: oklch(0.577 0.245 27.325);
-  --color-border: oklch(0.922 0 0);
-  --color-input: oklch(0.922 0 0);
-  --color-ring: oklch(0.708 0 0);
+  --color-border: #E5E2DB;
+  --color-input: #E5E2DB;
+  --color-ring: #2D5016;
   --radius: 0.5rem;
 }
 
@@ -29,5 +40,13 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-body);
   }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
